@@ -1,0 +1,154 @@
+@import url('https://fonts.google.com/specimen/Merriweather');
+@import url('https://fonts.google.com/specimen/Lobster');
+
+
+body{
+text-align:center;
+background: linear-gradient(to right, rgb(84, 148, 231), rgb(166, 136, 211));
+}
+
+h1{
+    display:inline-block;
+    position:relative;
+    color: rgb(32, 32, 77);
+    font-size: 40px;
+    font-family: 'Merriweather', cursive;
+}
+
+h1::after,h1::before{
+    content:'';
+    position:absolute;
+    width:120px;
+    height:3px;
+    background-color:currentColor;
+    top:0.63em;
+}
+
+h1::before{
+    left:-140px;
+}
+
+h1::after{
+    right:-140px;
+}
+
+img{
+    height:auto;
+    width:250px;
+    margin:auto;
+    display:block;
+    border-radius: 30px;
+    padding:10px;
+     border:5px solid rgb(63, 61, 177);
+
+}
+
+div{
+   
+    width: 100%;
+}
+
+#lista {
+    counter-reset: li; 
+    list-style: none; 
+    *list-style: decimal; 
+    font: 15px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+
+#lista ol {
+    margin: 0 0 0 2em; 
+}
+
+#lista li{
+    
+    position: relative;
+    display:grid;
+    padding: .6em .6em .6em 5em;
+    *padding: .4em;
+    margin: .6em 0;
+    background: rgb(191, 193, 194);
+    color: rgb(14, 13, 13);
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px auto;
+	width: 400px;
+    
+}
+
+#lista li:hover{
+    background: rgb(142, 143, 145);
+}
+
+#lista li:hover:before{
+    transform: rotate(360deg);  
+}
+
+#lista li:before{
+    content: counter(li);
+    counter-increment: li;
+    position:absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #87ceeb;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+
+
+p { 
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ 
+
+.main-container{
+	margin: 40px auto;
+	width: 900px;
+}
+
+table{
+	background-color: white;
+	text-align: left;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+
+}
+
+thead{
+	background-color: rgb(45, 74, 167);
+	border-bottom: solid 1px black;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #ddd;
+}
+
+tr:hover td{
+	background-color: #847deb;
+	color: white;
+}
+
+
+
